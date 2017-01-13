@@ -252,7 +252,7 @@ p1 {
 .clothing {
     font-size:0.75rem;
     margin-bottom:0.75rem;
-    text-transform:uppercase;
+    text-transform:lowercase;
     color:#969696;
 
 }
