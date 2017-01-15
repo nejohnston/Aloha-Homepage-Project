@@ -189,22 +189,24 @@ table {
 
     }
 
-/*.mostloved {
-
-    margin-top:100px;*/
-/*}*/
-
-
-/*.clearfix:before,
-.clearfix:after {
-    content:"";
-    display:table;
-    clear:both;*/
 
 .cart {
     float:right;
     width:5rem;
-    margin:1.1rem 1.2rem; 17px 0px;
+    margin:1.1rem 1.2rem; ;
+
+}
+
+/*.container {
+
+    margin:0 auto;
+    width:100%;*/
+}
+
+.socialName {
+
+visibility:hidden;
+
 }
 
 .mostloved{
@@ -269,7 +271,7 @@ h3 {
 
 .newcollection {
     text-align:center;
-    /*display:inline-block;*/
+    display:inline-block;
     padding-top: 11.8rem;
     text-transform:uppercase;
     font-size:1.25rem;
@@ -286,6 +288,8 @@ h3 {
     color:white;
     text-shadow: 2px 2px 4px rgba(100, 100, 100, 0.8);
     display:inline-block;
+    
+    
 
 
 
@@ -312,9 +316,8 @@ h2{
     padding-top:1rem;
 }
 
-p {
-    text-align:center;
-}
+
+
 
 ul {
     display:inline-block;
@@ -356,6 +359,8 @@ body {
     
 }
 
+
+
 .oceanimagefooter {
     height: 8.15rem;
     padding-top: 2.5rem;
@@ -370,38 +375,20 @@ body {
     margin-top:4rem;
     display:inline-block;
 }
-/*.footblackback {
-    height:330px;
-    background-color: #242424;
-    text-align:center;
-    background-size:cover;
-    color:white;
-    margin-top:0.5%;
-}*/
 
 .contactinfo {
     display:inline-block;
-    padding-top:2rem;
+    padding-top:0;
     line-height:2rem;
-
-
-
-
+    font-family:"playfair_display", sans-serif;
 
 }
 
-/*.youremail{
+.info {
+    color:white;
+}
 
-    float:right;
-    margin:0rem 20rem 0rem 0rem;
-    display:inline;
-    width:200px;
-    text-align:center;
-    width:9rem;;
-    z-index:100px;
-    border:1px solid black;
 
-}*/
 
 .address {
 
@@ -426,15 +413,87 @@ footer{
 
 .socialicons li {
 
-    display:inline-block;
+    display:inline-block;;
     text-align:center;
-    padding:1.5rem 0.5rem 0rem 3rem;
+    padding:1rem 0rem 0rem 0rem;
     min-width:1px;
     margin-left:1px;
     
+}
 
+
+
+
+
+form {
+    display:block;
+    position:relative;
+    width:30rem;
+}
+
+input[type="email"]
+{
+padding-top:1rem;;
+padding-bottom:1rem;
+display:inline-block;
+width:25%;
+margin-top:20px;
+font-size:1rem;
+line-height:0.7rem;
+border-radius:2rem;
+padding-left:6rem;
+font-family:"ralewaymedium",sans-serif;
+border:0;
+max-width:350px;
+padding-right:120px;
+z-index:-20px;
+left:100px;
+/*margin:0 auto;*/
 
 }
+
+input[type="submit"]
+{
+background-color: #e2574c;
+color:white;
+position:absolute;
+display:inline-block;
+width:30%;
+height:2.7rem;
+bottom:0.2rem;
+border-radius:25px;
+border:0;
+font-family:"ralewaymedium", sans-serif;
+font-size:1rem;
+padding:0rem 1rem 0rem 1rem;
+right:75px;
+    
+}
+
+.socialName {
+
+    visibility: hidden;
+}
+
+#contactemail {
+
+    color:white;
+    
+}
+
+a {
+
+    color:white;
+    display:inline;
+}
+
+#contactemail:hover {
+
+    color:#e2574c;
+}
+
+
+
 
  
 
@@ -445,24 +504,27 @@ footer{
 
 @media screen and (min-width: 600px) {
 
+    .email {
+    left:100rem;
+
+    }
+    
     li {
         float:right;
         width:50%;
         display:inline-block;
-        text-align:center;
 
     }
-
     address{
         float:left;
         z-index:10px;
     }
 
     clearfix:before,
-.clearfix:after {
-    content:"";
-    display:table;
-    clear:both;
+    .clearfix:after {
+        content:"";
+         display:table;
+         clear:both;
     ;
 }
       .contactinfo {
@@ -470,9 +532,46 @@ footer{
           float:left;
           display:inline-block;
           text-align:left;
+          margin-left:1%;
       }  
 
+.socialName {
+
+    visibility:visible;
+    display:inline-block;
+    padding-left:20px;
+    text-align:left;
+    font-family:"ralewaymedium", sans-serif;
+      
+
     }
+
+.socialName:hover {
+    color:#e2574c;
+}
+
+
+body {
+    font-size:16px;
+
+}
+
+
+
+input[type="email"] {
+
+    left:20rem;
+    text-align:center;
+    margin:0 auto;
+}
+
+.fa fa-facebook icon:hover {
+
+    color:#e2574c;
+
+
+}
+
 
 
 
@@ -487,14 +586,31 @@ footer{
         display:inline-block;
         text-align:center;
     }
-
+/*
 clearfix:before,
 .clearfix:after {
     content:"";
     display:table;
-    clear:both;
+    clear:both;*/
 
 }
 
+body {
+    font-size:16px;
+
+
+}
+
+.signupdates{
+
+    width:40%;
+
+}
+
+.socialicons {
+    float:right;
+    display:inline-block;
+    position:absolute;
+}
 
 
