@@ -48,6 +48,8 @@ table {
 }
 
 
+
+
 @font-face {
     font-family: 'playfair_bold';
     src: url('fonts/playfairdisplay-bold-webfont.eot');
@@ -430,7 +432,7 @@ footer{
 
 
 
-form {
+/*form {
     display:block;
     position:relative;
     width:30rem;
@@ -471,6 +473,39 @@ font-size:1rem;
 padding:0rem 1rem 0rem 1rem;
 right:75px;
     
+}*/
+
+input[type="email"], input[type="button"] {    
+   border-radius: 25px;
+   border: 0;
+}
+input[type="email"]{
+  width: 600px;
+  height: 2.5rem;
+  padding-left: 1rem;
+  font-size:1rem;
+  font-family:"ralewaymedium",sans-serif;
+  display:inline-block;
+  
+}
+
+input[type="value"]{
+  padding-right: 20px;
+}
+
+input[type="button"] {
+  font-weight: bold;
+  background-color: #e2574c ;
+  cursor:pointer;
+  margin-left: -110px;
+  color:white;  
+  height:2.4rem;
+  padding-right:1.5rem;
+  padding-left:1.3rem;
+  left:100rem;
+  font-size:1rem;
+  font-family:"ralewaymedium", sans-serif;
+  left:30
 }
 
 .socialName {
@@ -495,6 +530,14 @@ a {
     color:#e2574c;
 }
 
+#redicon:hover{
+     color:#e2574c;
+
+
+}
+
+
+
 
 
 
@@ -507,8 +550,8 @@ a {
 
 @media screen and (min-width: 600px) {
 
-    .email {
-    left:100rem;
+
+       
 
     }
     
@@ -623,10 +666,5 @@ body {
     float:right;
     display:inline-block;
     position:absolute;
-}
-
-.fa fa-facebook icon .fa fa-twitter icon {
-
-    float:left;
 }
 
