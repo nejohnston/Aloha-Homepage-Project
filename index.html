@@ -10,89 +10,91 @@
     
 </head>
 <body>
-    <header class="clearfix">
-        <section class="container">
-        <img src="images/aloha-logo.svg" class ="aloha" alt="aloha website logo">
-        <img src="images/cart-icon.svg" class="cart" alt="shopping cart">
+    <header class="container">
+        <div id="navlogo">   
+            <img src="images/aloha-logo.svg" class ="aloha" alt="aloha website logo">
+            <img src="images/cart-icon.svg" class="cart" alt="shopping cart">
+        </div>
     </header>
     <section class="hero">
-        <p class="newcollection">New collection </p>
-        <p class="spring"> Spring/Summer 2016 </p>
+        <div id="herotext">
+            <p class="newcollection">New collection </p>
+            <p class="spring"> Spring/Summer 2016 </p>
+        </div>
     </section>
         
             <h2 class="handcrafted" >Hand-Crafted <span id="heavy">Styles</span></h2>
                 <p1> Aloha Apparel Co. sells only the finest ready-to-travel clothing. 
                  Browse our current selection of products or sign up for updates below.
                  </p1>
+        
+            <h2 class="mostloved" > Most-Loved <span id="heavy">Products</span></h2>
     
-        <section class="products clearfix">
-            <h2 class="mostloved"> Most-Loved <span id="heavy">Products</span> </h2>
-            <ul>
-              <li>
-                
-                <img src ="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress"
-                class="products">
-                <p class="clothing"> Dresses </p>
-                <h3> Stretch Knit Dress </h3>
-                <p class="price"> $169.00 </p>
-        </li>
-        <li>
-                    
-                    <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt"
+            <section class="products container">
+                <ul>
+                    <li>
+                        <img src ="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress"
+                        class="products">
+                        <p class="clothing"> Dresses </p>
+                            <h3> Stretch Knit Dress </h3>
+                        <p class="price"> $169.00 </p>
+                   </li>
+                    <li>
+                        <img src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt"
+                        class="products">
+                        <p class="clothing"> Shirts </p>
+                            <h3> Cotton Blue Shirt </h3>
+                        <p class="price"> $89.00 </p>
+                    </li>
+                    <li>
+                        <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress"
                     class="products">
-                    <p class="clothing"> Shirts </p>
-                    <h3> Cotton Blue Shirt </h3>
-                    <p class="price"> $89.00 </p>
-        </li>
-        <li>
-                    
-                    <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress"
-                    class="products">
-                    <p class="clothing"> Dresses </p>
-                    <h3> Checked Stretch Dress </h3>
-                    <p class="price"> $129.00 </p>
-        </li>
-        <li>        
-                    <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack"
-                    class="products">
-                    <p class="clothing">Bags</p> 
-                    <h3> Blue Hipster Backpack </h3>
-                    <p class="price"> $69.00 </p>
-        </li>
-        </ul>
+                        <p class="clothing"> Dresses </p>
+                            <h3> Checked Stretch Dress </h3>
+                        <p class="price"> $129.00 </p>
+                    </li>
+                  <li>        
+                        <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack"
+                        class="products">
+                            <p class="clothing">Bags</p> 
+                                 <h3> Blue Hipster Backpack </h3>
+                            <p class="price"> $69.00 </p>
+                    </li>
+                 </ul>
+            </div>
     </section>
     <section class="oceanimagefooter">
                 <h2 class="signupdates"> Sign-up for <span id="heavy">Updates</span></h2>
+<div class="container signuptext">
                 <p4> Stay updated on our latest product releases, be first to find out 
             about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p4>
-        <!--<form>
-        <input type="email" name="email" value="" placeholder="Your Email" class="container">
-        <input type="submit" value="Subscribe">
-        </form>-->
-
-    <form class="subscribeForm">
+            </div>
+       <form class="subscribeForm">
                 <input type="email" value="Your Email">
                 <input type="button" name="subscribe" value="Subscribe" >
-            </form>        
-       
-</section>
-        
-    <footer>
-        <div class="contactinfo"> 
+            </form>     
+           
+       </section>
+        <footer>
+        <div class="contactinfo container"> 
             <p> © 2016 Aloha Apparel Co.</p>
             <p>Powered by HTML and CSS.</p>
             <p>604-604-6040. <a href="http://example.com"><span id="contactemail">info@alohaapparel.com</span></a></p>
-            <div class="address clearfix"><p>1490 W Broadway</p>
+            <div class="address"><p>1490 W Broadway</p>
             <p>Vancouver, BC, Canada</p></div>
         </div>
-            
-                   <ul class="socialicons"> 
-                   <a href="google.com"><li><i class="fa fa-facebook icon" aria-hidden="true" id="redicon"><div class="socialName">Facebook</div></a></i></li></a>
-                    <a href="google.com"><li><i class="fa fa-twitter icon" aria-hidden="true" id="redicon"><div class="socialName">Twitter</div></i></li></a>
-                    <a href="google.com"><li><i class="fa fa-instagram icon" aria-hidden="true" id="redicon" ><div class="socialName">Instagram</div></i></li></a>
-                   <a href="google.com"><li><i class="fa fa-pinterest-square icon" aria-hidden="true" id="redicon"><div class="socialName">Pinterest</div></i></li></a>
-                   <a href="google.com"><li><i class="fa fa-google-plus icon" aria-hidden="true" id="redicon"><div class="socialName">Google</div></i></li></a>
+        <section>
+            <div class="social">
+                   <ul id="socialicons"> 
+                   <a href="google.com"><li><i class="fa fa-facebook icon" aria-hidden="true" id="redicon"><div id="socialName">Facebook</div></i></li></a>
+                    <a href="google.com"><li><i class="fa fa-twitter icon" aria-hidden="true" id="redicon"><div id="socialName">Twitter</div></i></li></a>
+                    <a href="google.com"><li><i class="fa fa-instagram icon" aria-hidden="true" id="redicon" ><div id="socialName">Instagram</div></i></li></a>
+                   <a href="google.com"><li><i class="fa fa-pinterest-square icon" aria-hidden="true" id="redicon"><div id="socialName">Pinterest</div></i></li></a>
+                   <a href="google.com"><li><i class="fa fa-google-plus icon" aria-hidden="true" id="redicon"s><div id="socialName">Google</div></i></li></a>
                 </ul>
+                </div>
+                </section>
+                </div>
             </section> 
         </footer>
 </body>

@@ -167,14 +167,42 @@ table {
 
 }
 
+
+.container {
+
+    display:flex;
+    justify-content:center;
+
+}
+
+#navlogo {
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    width:480px;
+    
+
+}
+
+
 .aloha{
-    float:left;
     display:inline-block;
-    margin-bottom:15px;
-    margin-top:21px;
     margin-left:20px;
-    width:10rem;
+    width:9rem;
+    height:3rem;
+    margin-top:1.5rem;
+
+}
+
+
+
+
+.cart {
+    align-self:flex;
+    display:inline-block;
+    width:4.5rem; 
     height:auto;
+    margin-right:10px;  
 
 }
 
@@ -190,26 +218,27 @@ table {
     display:inline-block;
 
     }
+/*
 
 
-.cart {
-    float:right;
-    width:5rem;
-    margin:1.1rem 1.2rem; ;
 
-}
 
-/*.container {
-
-    margin:0 auto;
-    width:100%;*/
-}
 
 .socialName {
 
 visibility:hidden;
 
-}
+}*/
+
+.handcrafted{
+    text-align:center;
+    margin-top:8%;  
+    font-family:"playfair_italic", serif;
+    font-size:2.4rem;
+    font-style:italic;
+    font-weight:100;
+
+   }
 
 .mostloved{
     font-family: 'Playfair Display Web', serif;
@@ -220,6 +249,7 @@ visibility:hidden;
     display:block;
     font-size:2.4rem;
     font-style:italic;
+    text-align:center;
     
 }
 
@@ -273,7 +303,7 @@ h3 {
 
 .newcollection {
     text-align:center;
-    display:inline-block;
+    display:block;
     padding-top: 11.8rem;
     text-transform:uppercase;
     font-size:1.25rem;
@@ -297,15 +327,7 @@ h3 {
 
 }
 
-.handcrafted{
-    text-align:center;
-    margin-top:8%;  
-    font-family:"playfair_italic", serif;
-    font-size:2.4rem;
-    font-style:italic;
-    font-weight:100;
 
-   }
 
 #heavy {
     font-family:"playfair_bold", serif;
@@ -330,7 +352,7 @@ ul {
 
 .products {
     text-align:center;
-    display:inline-block;
+    display:block;
     line-height:200%;
     padding-left:4%;
 }
@@ -369,6 +391,7 @@ p4 {
 }
 
 .oceanimagefooter {
+    justify-content:center;
     height: 8.15rem;
     padding-top: 2.5rem;
     padding-bottom: 145px;
@@ -383,6 +406,11 @@ p4 {
     display:inline-block;
 }
 
+.subscribeform {
+display:block;
+
+
+}
 .contactinfo {
     display:inline-block;
     padding-top:0;
@@ -400,6 +428,8 @@ p4 {
 .address {
 
     color:#969696;
+    display:inline-block;
+    align-self:center;
 }
 
    
@@ -407,80 +437,35 @@ p4 {
 
 footer{
     text-align:center;
-    height:15rem;
     background-color: #242424;
     text-align:center;
     background-size:cover;
     color:white;
     margin-top:0.5%;
-    display:block;      
     padding-top:2.8rem;
+    justify-content:space-around;;
 }
 
 
-.socialicons li {
+#socialicons li {
 
-    display:inline-block;;
+    display:inline;
     text-align:center;
     padding:1rem 0rem 0rem 0rem;
     min-width:1px;
     margin-left:1px;
+
     
 }
 
 
-
-
-
-/*form {
-    display:block;
-    position:relative;
-    width:30rem;
-}
-
-input[type="email"] {
-
-padding-top:1rem;;
-padding-bottom:1rem;
-display:block;
-width:25%;
-font-size:1rem;
-line-height:0.7rem;
-border-radius:2rem;
-padding-left:6rem;
-font-family:"ralewaymedium",sans-serif;
-border:0;
-max-width:350px;
-padding-right:120px;
-z-index:-20px;
-left:100px;
-
-}
-
-input[type="submit"]
-{
-background-color: #e2574c;
-color:white;
-position:absolute;
-display:inline-block;
-width:30%;
-height:2.7rem;
-bottom:0.2rem;
-border-radius:25px;
-border:0;
-font-family:"ralewaymedium", sans-serif;
-font-size:1rem;
-padding:0rem 1rem 0rem 1rem;
-right:75px;
-    
-}*/
 
 input[type="email"], input[type="button"] {    
    border-radius: 25px;
    border: 0;
 }
 input[type="email"]{
-  width: 600px;
+  width: 275px;
   height: 2.5rem;
   padding-left: 1rem;
   font-size:1rem;
@@ -497,15 +482,13 @@ input[type="button"] {
   font-weight: bold;
   background-color: #e2574c ;
   cursor:pointer;
-  margin-left: -110px;
+  margin-left: -95px;
   color:white;  
   height:2.4rem;
-  padding-right:1.5rem;
-  padding-left:1.3rem;
   left:100rem;
   font-size:1rem;
   font-family:"ralewaymedium", sans-serif;
-  left:30
+
 }
 
 .socialName {
@@ -516,6 +499,7 @@ input[type="button"] {
 #contactemail {
 
     color:white;
+    
     
 }
 
@@ -530,67 +514,66 @@ a {
     color:#e2574c;
 }
 
+#socialName{
+
+visibility:hidden;
+
+}
+
 #redicon:hover{
      color:#e2574c;
 
 
 }
 
+#subscribeForm{
+    
+}
 
 
 
 
 
- 
 
 
+@media screen and (min-width: 480px) {
 
-
+    #navlogo {
+        
+        
+        width:100%;
+    }
 
 
 @media screen and (min-width: 600px) {
 
 
-       
+        #navlogo {
+            width:1240px;
+            align-self:flex-end;
+        }
 
-    }
-    
-    li {
-        float:right;
+
+li {
         width:50%;
         display:inline-block;
+        text-align:center;
+        margin-right:2rem;
+        align-items:stretch;
 
-    }
-    address{
-        float:left;
-        z-index:10px;
-    }
-
-    clearfix:before,
-    .clearfix:after {
-        content:"";
-         display:table;
-         clear:both;
-    ;
+    
+   
 }
-      .contactinfo {
 
-          float:left;
-          display:inline-block;
-          text-align:left;
-          margin-left:1%;
-      }  
+.products {
+    align-items:stretch;
+    width:100%;
 
-.socialName {
 
-    visibility:visible;
-    display:inline-block;
-    padding-left:20px;
-    text-align:left;
-    font-family:"ralewaymedium", sans-serif;
-      
+}
 
-    }
+
+    
 
 .socialName:hover {
     color:#e2574c;
@@ -618,17 +601,37 @@ input[type="email"] {
 
 }
 
+#socialName {
+    visibility:visible;
+    display:inline-block;
+    padding-left:20px;
+    font-family:"ralewaymedium", sans-serif;
+    align-content:flex-end;
+}
+
 .signupdates {
     min-width:100%;
 }
 
 p4 {    
-    min-width:50%;
-    max-width:60%;
+    min-width:30%;
+
 }
 
 
+a {
 
+    right:300px;
+}
+
+#socialicons li {
+
+ display:block;
+    text-align:center;
+    padding:1rem 0rem 0rem 0rem;
+    min-width:1px;
+    margin-left:1px;
+}  
 
 
 
@@ -636,17 +639,12 @@ p4 {
 @media screen and (min-width: 1240px) {
 
     li {
-        float:left;
-        width:25%;
+        width:21%;
         display:inline-block;
         text-align:center;
+        margin-right:2rem;
     }
-/*
-clearfix:before,
-.clearfix:after {
-    content:"";
-    display:table;
-    clear:both;*/
+
 
 }
 
@@ -660,11 +658,5 @@ body {
 
     width:40%;
 
-}
-
-.socialicons {
-    float:right;
-    display:inline-block;
-    position:absolute;
 }
 
