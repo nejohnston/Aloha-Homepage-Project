@@ -169,8 +169,8 @@ table {
 
 
 .container {
-
-    display:flex;
+    margin:0 auto;
+    max-width:1240px;
     width:100%;
 
 }
@@ -195,6 +195,8 @@ table {
 
 }
 
+
+
 header{
     display:flex;
     flex-wrap:wrap;
@@ -211,7 +213,7 @@ header{
 }
 
 .navbar {
-    /*display:inline-flex;*/
+    display:inline-flex;
     justify-content:center;
     color:#e2574c;
     margin-right:4rem;
@@ -240,11 +242,6 @@ header{
     flex-wrap:wrap;
 }
 
-.navbar li{
-    margin-left:20px;
-    text-align:center;
-    flex-wrap:wrap;
-}
 
 
 .hero {
@@ -286,7 +283,7 @@ header{
 
 .menspic {
     width:100%; 
-    display:inline;
+    display:inline-flex;;
     position:relative;
     display:inline;
     z-index:-1;
@@ -296,14 +293,13 @@ header{
 .menname {
     display:inline;
     position:absolute;
-    width:100%;
-    margin-left:12rem;;
-    margin-top:5rem;
+    margin-left:40%;
+    margin-top:20%;
       
 }
 
 .trends{
-    display:inline;
+    display:inline-flex;
     display:inline;
     width:49.5%;
  
@@ -313,8 +309,8 @@ header{
    display:inline;
    position:absolute;
    width:49.5%;
-   margin-left:4rem;
-   margin-top:6rem;
+   margin-left:15%;
+   margin-top:20%;
    
     
   
@@ -322,7 +318,7 @@ header{
 }
 
 .glasses {
-    display:inline;
+    display:inline-flex;
     display:inline;
     width:49.5%;    
    
@@ -332,8 +328,8 @@ header{
 .glassesname{
     display:inline;
     position:absolute;
-   margin-left:4rem;
-   margin-top:6rem;
+   margin-left:15%;
+   margin-top:20%;
 }
 
 .salespic {
@@ -347,8 +343,8 @@ header{
 .salename{
      display:inline-flex;
      position:absolute;
-     margin-left:4rem;
-     margin-top:6rem;
+     margin-left:15%;
+     margin-top:20%;
     
 }
 
@@ -360,8 +356,8 @@ header{
 .bagname{
      display:inline-flex;
      position:absolute;
-     margin-left:4rem;
-     margin-top:6rem;
+     margin-left:15%;
+     margin-top:20%;
     
 
 }
@@ -375,8 +371,8 @@ header{
 .womenname{
      display:inline;
      position:absolute;
-     margin-left:12rem;;
-    margin-top:5rem;
+     margin-left:40%;;
+    margin-top:20%;
      
   
    
@@ -396,6 +392,13 @@ header{
     color:#f5ebc6;
 
 }
+
+/*.collage{
+    background:linear-gradient( to bottom, rgba(0,0,0,0.25) 0%,
+     rgba(0,0,0,0.25) 100% )no-repeat center;
+    background-size:cover;*/
+
+
 
 
 p4{
@@ -489,9 +492,11 @@ ul {
 
 .products {
     text-align:center;
-    display:block;
+    display:inline-flex;
     line-height:200%;
-    padding-left:4%;
+    width:100%;
+    flex-wrap:wrap;
+
 }
 
 
@@ -528,6 +533,7 @@ p4 {
     max-width:100%;
     line-height:35px;
     font-size:1.15rem;
+    color:white;
 }
 
 .oceanimagefooter {
@@ -701,7 +707,7 @@ visibility:hidden;
 
 
         #navlogo {
-            width:1240px;
+            /*width:1240px;*/
             align-self:flex-end;
             display:flex;
         }
@@ -740,9 +746,21 @@ header{
     width:49%;
 }
 
+.menname{
+
+    margin-left:20%;
+    margin-top:10%;
+}
+
 .trends{
 
     width:24.3%;
+
+}
+
+.trendname{
+    margin-left:6%;
+    margin-top:10%;
 }
 
 .glasses{
@@ -750,26 +768,48 @@ header{
     width:24.3%;
 }
 
-.salespic {
+.glassesname{
+    margin-left:5%;
+    margin-top:10%;
+}
+
+.salespic{
     width: 24.3%;
+
+}
+
+.salename{
+    margin-left:6%;
+    margin-top:10%;
+
 
 }
 
 .bags{
     width:24.3%;
+
+}
+
+.bagname{
+    margin-left:7%;
+    margin-top:10%;
 }
 
 .womens{
     width:49%;
 }
 
+.womenname{
+    margin-left:20%;
+    margin-top:10%;
+}
+
 
 .products {
-    display:flex;
+    display:flex;*/
     flex-direction:row;
     width:100%;
-    height:400px;
-
+   
 }
 
 .collagefont{
