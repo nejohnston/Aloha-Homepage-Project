@@ -286,7 +286,7 @@ header{
 
 .menspic {
     width:100%; 
-    display:inline-flex;
+    display:inline;
     position:relative;
     display:inline;
     z-index:-1;
@@ -294,31 +294,35 @@ header{
 }
 
 .menname {
-    display:inline-flex;
+    display:inline;
     position:absolute;
     width:100%;
-    margin-left:20%;
-    margin-top:10%;
+    margin-left:12rem;;
+    margin-top:5rem;
       
 }
 
 .trends{
-    display:inline-flex;
+    display:inline;
     display:inline;
     width:49.5%;
  
 }
 
 .trendname {
-   display:inline-flex;
-
-    position:absolute;
+   display:inline;
+   position:absolute;
+   width:49.5%;
+   margin-left:4rem;
+   margin-top:6rem;
+   
+    
   
     
 }
 
 .glasses {
-    display:inline-flex;
+    display:inline;
     display:inline;
     width:49.5%;    
    
@@ -327,13 +331,15 @@ header{
 
 .glassesname{
     display:inline;
-     position:absolute;
-   
+    position:absolute;
+   margin-left:4rem;
+   margin-top:6rem;
 }
 
 .salespic {
     display:inline-flex;
     width:49.5%;
+    
 
 
 }
@@ -341,15 +347,11 @@ header{
 .salename{
      display:inline-flex;
      position:absolute;
+     margin-left:4rem;
+     margin-top:6rem;
     
-
-
-
 }
 
-
-
-    
 .bags {
     display:inline-flex;
     width:49.5%;
@@ -358,8 +360,8 @@ header{
 .bagname{
      display:inline-flex;
      position:absolute;
-
-    text-align:center;
+     margin-left:4rem;
+     margin-top:6rem;
     
 
 }
@@ -367,32 +369,34 @@ header{
 .womens {
     display:inline-flex;
     width:100%;
+    
 }
 
 .womenname{
-     display:inline-flex;
+     display:inline;
      position:absolute;
+     margin-left:12rem;;
+    margin-top:5rem;
+     
   
    
 
 }
 
 .collagefont{
- text-transform:uppercase;
+     text-transform:uppercase;
+     color:white;
+     font-family:"ralewaymedium",sans-serif;
+     font-weight:bold;
+     font-size:1.6rem;
+     text-shadow:2px 2px 4px rgba(100, 100, 100, 0.8);
+}
+
+.collagefont:hover{
+    color:#f5ebc6;
 
 }
 
-
-
-/*#categoryname {
-    color:black;
-    display:inline-flex;
-    position:absolute;
-    top:200px;;*/
-    
-
-}
-    
 
 p4{
     font-size:1.05rem;
@@ -766,6 +770,10 @@ header{
     width:100%;
     height:400px;
 
+}
+
+.collagefont{
+    text-size:1.8rem;
 }
 
 
