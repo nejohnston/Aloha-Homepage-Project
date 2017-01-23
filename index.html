@@ -15,19 +15,21 @@
         <div class = "navlogo">
             <img src="images/aloha-logo.svg" class ="aloha" alt="aloha website logo">
         </div>
+        <div>
         <nav class = "navlogo">
             <ul class = "navbar">
-                <li>About</li>
-                <li>Shop</li> 
-                <li>Featured</li>
-                <li>Updates</li>
+                <a href="#about"><li>About</li></a>
+                <a href="#shop"><li>Shop</li></a>
+                <a href="#featured"><li>Featured</li></a>
+                <a href="#updates"><li>Updates</li></a>
              </ul>
         </nav>
+        </div>
+
         <div class = "navcart">
             <img src="images/cart-icon.svg" class="cart" alt="shopping cart">
         </div>
     </header>
-        </div>
     <section class="hero">
         <div id="herotext">
             <p class="newcollection">New collection </p>
@@ -35,32 +37,33 @@
         </div>
     </section>
             <section>
-                 <h2 class="handcrafted" >Hand-Crafted <span id="heavy">Styles</span></h2>
-                     <p1> Aloha Apparel Co. sells only the finest ready-to-travel clothing. 
+                 <h2 class="handcrafted" id="about">Hand-Crafted <span class="heavy">Styles</span></h2>
+                     <p class="appareltext"> Aloha Apparel Co. sells only the finest ready-to-travel clothing. 
                      Browse our current selection of products or sign up for updates below.
-                    </p1>
+                    </p>
              </section>
-             <!--<h2 class="mostloved" > Most-Loved <span id="heavy">Products</span></h2>-->
+             
          
                 <section>
-                    <div>
-                        <a href="google.com"><p class="menname collagefont ">men</p></a>
-                        <img class ="menspic collage"src ="images/mens-category.jpg">
-                        <a href="google.com"><p class="trendname collagefont">trends</p></a>
-                        <img class ="trends collage" src ="images/trends-category.jpg">
-                        <a href="google.com"><p class="glassesname collagefont">glasses</p></a>
-                        <img class ="glasses collage" src ="images/glasses-category.jpg">
+                    <div id="shop">
+                        <a href="#"><p class="menname collagefont ">men</p></a>
+                        <img class ="menspic collage" src ="images/mens-category.jpg" alt="mens category">
+                        <a href="#"><p class="trendname collagefont">trends</p></a>
+                        <img class ="trends collage" src ="images/trends-category.jpg" alt="trends category">
+                        <a href="#"><p class="glassesname collagefont">glasses</p></a>
+                        <img class ="glasses collage" src ="images/glasses-category.jpg" alt="glasses category">
                     </div>
                     <div>
-                        <a href="google.ca"><p class="salename collagefont">sales</p></a></a>
-                        <img class ="salespic collage" src ="images/sale-category.jpg">
-                        <a href="google.com"><p class="bagname collagefont">bags</p></a>
-                        <img class ="bags collage" src ="images/bags-category.jpg">
-                        <a href="google.com"><p class="womenname collagefont">women's</p></a>
-                        <img class ="womens collage" src ="images/womens-category.jpg">
+                        <a href="#"><p class="salename collagefont">sales</p></a>
+                        <img class ="salespic collage" src ="images/sale-category.jpg" alt="sales category">
+                        <a href="#"><p class="bagname collagefont">bags</p></a>
+                        <img class ="bags collage" src ="images/bags-category.jpg" alt="bags category">
+                        <a href="#"><p class="womenname collagefont">women's</p></a>
+                        <img class ="womens collage" src ="images/womens-category.jpg" alt="womens category">
                         </div>
                 </section>
-                    <!--<section class="container">-->
+                    <h2 class="mostloved" id="featured"> Most-Loved <span class="heavy">Products</span></h2>
+    
                     <div>
                     <ul class="products">
                         <li>
@@ -90,13 +93,12 @@
                     </li>
                  </ul>
                  </div>
-            </div>
-    </section>
+            
     <section class="oceanimagefooter">
-                <h2 class="signupdates"> Sign-up for <span id="heavy">Updates</span></h2>
+                <h2 class="signupdates"> Sign-up for <span class="heavy">Updates</span></h2>
                     <div class="container signuptext">
-                        <p4> Stay updated on our latest product releases, be first to find out 
-                        about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p4>
+                        <p class="stayupdatedtext" id="updates"> Stay updated on our latest product releases, be first to find out 
+                        about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
                      </div>
             <form class="subscribeForm">
                 <input type="email" value="Your Email">
@@ -107,23 +109,21 @@
             <div id="contactinfo"> 
                 <p> © 2016 Aloha Apparel Co.</p>
                 <p>Powered by HTML and CSS.</p>
-                <p>604-604-6040. <a href="http://example.com"><span id="contactemail">info@alohaapparel.com</span></a></p>
+                <p>604-604-6040. <a href="#"><span id="contactemail">info@alohaapparel.com</span></a></p>
                 <div class="address"><p>1490 W Broadway</p>
                 <p>Vancouver, BC, Canada</p></div>
             </div>
         <section>
             <div class="social">
                    <ul class="socialicons"> 
-                   <a href="google.com"><li><i class="fa fa-facebook icon" aria-hidden="true" id="redicon"><div id="socialName">Facebook</div></i></li></a>
-                    <a href="google.com"><li><i class="fa fa-twitter icon" aria-hidden="true" id="redicon"><div id="socialName">Twitter</div></i></li></a>
-                    <a href="google.com"><li><i class="fa fa-instagram icon" aria-hidden="true" id="redicon" ><div id="socialName">Instagram</div></i></li></a>
-                   <a href="google.com"><li><i class="fa fa-pinterest-square icon" aria-hidden="true" id="redicon"><div id="socialName">Pinterest</div></i></li></a>
-                   <a href="google.com"><li><i class="fa fa-google-plus icon" aria-hidden="true" id="redicon"s><div id="socialName">Google</div></i></li></a>
-                </ul>
+                        <li><a href="google.com"><i class="fa fa-facebook icon" aria-hidden="true" class="redicon"><div id="socialName">Facebook</div></i></a></li>
+                        <li><a href="google.com"><i class="fa fa-twitter icon" aria-hidden="true" class="redicon"><div id="socialName">Twitter</div></i></a></li>
+                        <li><a href="google.com"><i class="fa fa-instagram icon" aria-hidden="true" class="redicon" ><div id="socialName">Instagram</div></i></a></li>
+                        <li><a href="google.com"><i class="fa fa-pinterest-square icon" aria-hidden="true" class="redicon"><div id="socialName">Pinterest</div></i></a></li>
+                        <li><a href="google.com"><i class="fa fa-google-plus icon" aria-hidden="true" class="redicon"><div id="socialName">Google</div></i></a></li>
+                    </ul>
                 </div>
-                </section>
-                </div>
-            </section> 
+        </section> 
         </footer>
             <script src= "js/jquery-3.1.1.min.js"></script>
             <script src= "js/main.js"></script>
