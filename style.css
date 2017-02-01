@@ -167,11 +167,26 @@ table {
 
 }
 
+.screen-reader-text {
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+
+.screen-reader-text:focus {
+   clip: auto !important;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000; /* above all content */
+}
 
 .container {
     margin:0 auto;
-    min-width:480px;
-    max-width:1240px;
     width:100%;
     display:flex;
     justify-content:space-between;
@@ -197,6 +212,9 @@ table {
   
 
 }
+a{
+    text-decoration:none;
+}
 
 
 
@@ -211,38 +229,25 @@ header{
     height:auto;
     align-self:flex-end;  
     order:3;
-
 }
 
-.navbar a{
-    display:inline-flex;
+ .navbar a{
+    display:inline;
     justify-content:center;
     color:#e2574c;
     font-size:1rem;
     height:1px;
-    margin-bottom:1.5rem;
-    padding-top:1rem;
-    flex-wrap:wrap;
-    text-decoration:none;
-    margin-top:2rem;
-
-
 }
-    
+
 .navbar li{
+    padding-top:100px;
     margin-left:10px;
+    display:inline;
+    text-decoration:none;
     
 }
    
 
-
-.redicon{
-    color:white;
-    font-weight:bold;
-    font-size:1rem;
-    text-decoration:none;
-
-}
 
    
 
@@ -289,72 +294,71 @@ header{
     text-align:center;
     
 }
+/*CATEGORY SECTION*/
+
+.category-list{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+}
 
 
-.menspic {
-    width:100%; 
-    display:inline-flex;;
-    position:relative;
+.mens-pic {
+    flex-basis:100%;
     display:inline;
-    z-index:-1;
-    border-bottom:4px solid white;
+    position:relative;
+    z-index:-999;
+    
 
 }
 
-.menname {
+
+.men-name {
     display:inline;
     position:absolute;
-    margin-left:40%;
-    margin-top:20%;
+    
       
 }
 
 .trends{
-    display:inline-flex;
-    display:inline;
-    width:48%;
-    border-left:2px solid white;
-    border-right:3px solid white;
-    border-bottom:4px solid white;
+    flex-basis:50%;
+    display:flex;
  
  
 }
 
-.trendname {
+.trend-name {
    display:inline;
    position:absolute;
-   width:49.5%;
-   margin-left:15%;
-   margin-top:20%;
    
-    
+        
 }
 
 .glasses {
-    display:inline-flex;
-    display:inline;
-    width:48%; 
-    border-bottom:4px solid white;
+    /*position:relative;*/
+    display:flex;
+    flex-basis:50%;
    
 
 }
 
 .glassesname{
-    display:inline;
+    display:inline-flex;
     position:absolute;
-   margin-left:15%;
-   margin-top:20%;
 }
 
-.salespic {
+.sales-pic {
     display:inline-flex;
-    width:48%;
+    flex-basis:50%;
+    
     
 
 
 }
 
-.salename{
+.salesname{
      display:inline-flex;
      position:absolute;
      margin-left:15%;
@@ -364,7 +368,6 @@ header{
 
 .bags {
     display:inline-flex;
-    width:48%;
     border-left:2px solid white;
 }
 
@@ -388,7 +391,6 @@ header{
      display:inline;
      position:absolute;
      margin-left:40%;
-     margin-top:20%;
      
   
    
@@ -520,13 +522,6 @@ ul {
 }
 
 
-body {
-
-    margin:0 auto;
-    font-family: "ralewaylight", sans-serif;
-    font-size:14px;
-    font-color:#2d2d2d;
-}
 
 .signupdates{
     text-align:center;
@@ -656,10 +651,7 @@ input[type="button"] {
 
 }
 
-.socialName {
 
-    visibility: hidden;
-}
 
 #contactemail  {
 
@@ -672,38 +664,33 @@ input[type="button"] {
     color:#e2574c;
 }
 
-#socialName{
+.socialicons a{
 
 visibility:hidden;
 
 }
 
-.redicon:hover{
+#redicon{
+    color:white;
+    font-weight:bold;
+    /*font-size:10rem;*/
+    text-decoration:none;
+    visibility:hidden;
+
+}
+
+#redicon:hover{
      color:#e2574c;
 
 
 }
 
+*{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
 
-
-
-
-
-
-
-
-@media screen and (min-width: 480px) {
-
-    #navlogo {
-        
-        
-        width:100%;
-    }
-
-
-
-    
-
+}
 
 @media screen and (min-width: 600px) {
 
@@ -735,11 +722,6 @@ visibility:hidden;
     margin-top:10%;
 }
 
-.trends{
-
-    width:24.3%;
-
-}
 
 .trendname{
     margin-left:6%;
@@ -748,16 +730,15 @@ visibility:hidden;
 
 .glasses{
 
-    width:24.3%;
+
 }
 
 .glassesname{
-    margin-left:5%;
-    margin-top:10%;
+   
 }
 
 .salespic{
-    width: 24.3%;
+
 
 }
 
@@ -809,7 +790,7 @@ visibility:hidden;
 
     
 
-.socialName:hover {
+.socialicons a:hover {
     color:#e2574c;
 }
 
@@ -834,9 +815,9 @@ input[type="email"] {
 }
 
 
-#socialName {
+.socialicons a{
     visibility:visible;
-    display:inline-block;
+    display:inline-flex;
     padding-left:20px;
     font-family:"ralewaymedium", sans-serif;
     align-content:flex-end;
@@ -857,9 +838,9 @@ a {
     right:300px;
 }
 
-#socialicons li {
+.socialicons li {
 
-    display:inline-flex;
+    display:inline-block;
     text-align:center;
     padding:1rem 0rem 0rem 0rem;
     min-width:1px;
@@ -872,19 +853,6 @@ footer {
     display:flex;
     justify-content:space-between;
 }
-
-@media screen and (min-width: 600px){
-
-    .products li{
-
-        width:50%;
-
-    }
-
-
-
-
-
 @media screen and (min-width: 1240px) {
 
     
