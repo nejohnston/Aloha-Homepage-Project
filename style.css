@@ -297,13 +297,14 @@ header{
 /*CATEGORY SECTION*/
 
 .category-list{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
 }
-
+.category-list {
+    width: 100vh;
+}
 
 .mens-pic {
     flex-basis:100%;
